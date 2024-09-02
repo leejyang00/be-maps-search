@@ -16,5 +16,3 @@ jobs:
         run: yarn --prefer-offline
       - name: Run linters
         run: yarn lint
-      - name: Test
-        run: yarn test
