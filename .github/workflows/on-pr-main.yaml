@@ -7,7 +7,7 @@ on:
 
 jobs:
   run-linters:
-    name: Runs lint and prettier
+    name: Runs lint
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Git Repository
