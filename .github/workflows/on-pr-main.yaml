@@ -1,0 +1,18 @@
+name: Push to main
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  run-linters:
+    name: Runs lint and prettier
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Git Repository
+        uses: actions/checkout@v2
+      - name: Install dependencies
+        run: yarn --prefer-offline
+      - name: Run linters
+        run: yarn lint
